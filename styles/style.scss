@@ -1,0 +1,27 @@
+$main-color: rgb(239, 51, 64);
+$secondary-color: white;
+$highlight-color: rgb(175, 40, 51);
+
+$header1: 3rem;
+$header2: 2.5rem;
+$header3: 2rem;
+$text: 1.8rem;
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.action-button{
+    padding: 25px;
+    margin: 50px 0;
+    color: $secondary-color;
+    background: $highlight-color;
+    border:$highlight-color;
+    border-radius: 25px;
+}
+
+@import 'global';
+@import 'header';
